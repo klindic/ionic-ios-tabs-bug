@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>demo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs #tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button *ngIf="availableTabs.includes('1')" tab="first-tab/1">
+        <ion-label>First tab</ion-label>
+      </ion-tab-button>
+      <ion-tab-button *ngIf="availableTabs.includes('2')" tab="second-tab/2">
+        <ion-label>Second tab</ion-label>
+      </ion-tab-button>
+      <ion-tab-button *ngIf="availableTabs.includes('3')" tab="third-tab/3">
+        <ion-label>Third tab</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

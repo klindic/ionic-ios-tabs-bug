@@ -13,12 +13,19 @@ export class Tab1Page {
   navigate() {
     const params = [
       {
-        name: 'tab-1',
+        id: '1',
+        name: 'first-tab',
         isVisible: true
       },
       {
-        name: 'tab-2',
+        id: '2',
+        name: 'second-tab',
         isVisible: false
+      },
+      {
+        id: '3',
+        name: 'third-tab',
+        isVisible: true
       },
     ];
     this.router.navigate(['demo'], {
