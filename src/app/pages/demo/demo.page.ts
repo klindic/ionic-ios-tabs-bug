@@ -33,7 +33,7 @@ export class DemoPage implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.preselectTab();
+    // this.preselectTab();
   }
 
   preselectTab() {
@@ -41,13 +41,13 @@ export class DemoPage implements OnInit, AfterViewInit {
       const preselectedTab = this.tabs.find(tab => tab.isVisible);
       try {
         this.ionTabs.select(`${preselectedTab.name}/${preselectedTab.id}`);
-      } catch (error) {
-      }
+      } catch (error) {}
     }
   }
 
   ionViewWillEnter() {
     console.log('ionViewWillEnter');
+    this.preselectTab();
   }
 
   ionViewDidEnter() {
