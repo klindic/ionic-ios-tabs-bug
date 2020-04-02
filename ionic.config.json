@@ -1,5 +1,7 @@
 {
   "name": "ios-tabs-bug-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
